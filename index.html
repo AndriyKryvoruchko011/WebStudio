@@ -3,117 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>WebStudio</title>
   </head>
   <body>
     <header>
-      <section>
-        <div>
-          <h1>WebStudio</h1>
-          <nav>
-            <ul>
-              <li><a href="#">Студія</a></li>
-              <li><a href="#">Портфоліо</a></li>
-              <li><a href="#">Контакти</a></li>
-            </ul>
-          </nav>
-          <div>
-            <p>info@devstudio.com</p>
-            <p>+38 096 111 11 11</p>
-          </div>
-        </div>
-        <div>
-          <h1>
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
-          <button type="button">Замовити послугу</button>
+      <section class="header-section">
+        <h1 class="header-logo">WebStudio</h1>
+        <nav class="section-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Студія</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Портфоліо</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header-section-contact">
+          <p class="header-section-email">info@devstudio.com</p>
+          <p class="header-section-phone">+38 096 111 11 11</p>
         </div>
       </section>
     </header>
+
     <main>
-      <div>
-        <article>
-          <h5>УВАГА ДО ДЕТАЛЕЙ</h5>
-          <p>
-            Ідейні міркування, і навіть початок <br />
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
+          <button class="hero-button" type="button">Замовити послугу</button>
+        </div>
+      </section>
+
+      <section class="hero-features">
+        <article class="hero-features-item">
+          <h5 class="hero-features-item-title">УВАГА ДО ДЕТАЛЕЙ</h5>
+          <p class="hero-features-item-text">Ідейні міркування, і навіть початок <br />
             повсякденної роботи з формування <br />
-            позиції.
-          </p>
+            позиції.</p>
         </article>
-        <article>
-          <h5>ПУНКТУАЛЬНІСТЬ</h5>
-          <p>
-            Завдання організації, особливо рамки <br />
-            і місце навчання кадрів тягне у себе.
-          </p>
+        <article class="features-item">
+          <h5 class="features-item-title">ПУНКТУАЛЬНІСТЬ</h5>
+          <p class="features-item-text"> Завдання організації, особливо рамки <br />
+            і місце навчання кадрів тягне у себе.</p>
         </article>
-        <article>
-          <h5>ПЛАНУВАННЯ</h5>
-          <p>
-            Так само консультація з широким <br />
-            активом значною мірою зумовлює.
-          </p>
+        <article class="features-item">
+          <h5 class="features-item-title">ПЛАНУВАННЯ</h5>
+          <p class="features-item-text">Так само консультація з широким <br />
+            активом значною мірою зумовлює.</p>
         </article>
-        <article>
-          <h5>СУЧАСНІ ТЕХНОЛОГІЇ</h5>
-          <p>
-            Значимість цих проблем настільки <br />
+        <article class="features-item">
+          <h5 class="features-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h5>
+          <p class="features-item-text"> Значимість цих проблем настільки <br />
             очевидна,що реалізація планових <br />
-            завдань.
-          </p>
+            завдань.</p>
         </article>
-      </div>
-      <section>
-       
-          <h2>Чим ми займаємося</h2>
-          <article>
-            <img src="./img/box 1.png" alt="Фото розробки інтерфейсу" />
-          </article>
+      </section>
 
-          <article><img src="./img/box 2.png" alt="фото ноутбуку" /></article>
+      <section class="main-activity">
+        <h2 class="main-activity-title">Чим ми займаємося</h2>
+        <article class="main-activity-item">
+          <img class="main-activity-img" src="./img/box 1.png" alt="Фото розробки інтерфейсу" />
+        </article>
+        <article class="main-activity-item">
+          <img class="main-activity-img" src="./img/box 2.png" alt="Фото ноутбуку" />
+        </article>
+        <article class="main-activity-item">
+          <img class="main-activity-img" src="./img/box 3.png" alt="Фото планшету" />
+        </article>
+      </section>
 
-          <article><img src="./img/box 3.png" alt="фото планшету" /></article>
-          </section>
-        
-       <section>
-  <h2>Наша команда</h2>
+      <section class="main-team">
+        <h2 class="main-team-title">Наша команда</h2>
 
-  <article>
-    <img src="./img/Product Designer.jpg" alt="Фото Ігор Дем'яненко" />
-    <h3>Ігор Дем'яненко</h3>
-    <p>Product Designer</p>
-  </article>
+        <article class="team-member">
+          <img class="team-member-photo" src="./img/Product Designer.jpg" alt="Фото Ігор Дем'яненко" />
+          <h3 class="team-member-name">Ігор Дем'яненко</h3>
+          <p class="team-member-role">Product Designer</p>
+        </article>
 
-  <article>
-    <img src="./img/Frontend Developer.jpg" alt="Фото Ольга Репіна" />
-    <h3>Ольга Репіна</h3>
-    <p>Frontend Developer</p>
-  </article>
+        <article class="team-member">
+          <img class="team-member-photo" src="./img/Frontend Developer.jpg" alt="Фото Ольга Репіна" />
+          <h3 class="team-member-name">Ольга Репіна</h3>
+          <p class="team-member-role">Frontend Developer</p>
+        </article>
 
-  <article>
-    <img src="./img/Marketing.jpg" alt="Фото Микола Тарасов" />
-    <h3>Микола Тарасов</h3>
-    <p>Marketing</p>
-  </article>
+        <article class="team-member">
+          <img class="team-member-photo" src="./img/Marketing.jpg" alt="Фото Микола Тарасов" />
+          <h3 class="team-member-name">Микола Тарасов</h3>
+          <p class="team-member-role">Marketing</p>
+        </article>
 
-  <article>
-    <img src="./img/UI Designer.jpg" alt="Фото Михайло Єрмаков" />
-    <h3>Михайло Єрмаков</h3>
-    <p>UI Designer</p>
-  </article>
-</section>
-      
+        <article class="team-member">
+          <img class="team-member-photo" src="./img/UI Designer.jpg" alt="Фото Михайло Єрмаков" />
+          <h3 class="team-member-name">Михайло Єрмаков</h3>
+          <p class="team-member-role">UI Designer</p>
+        </article>
+      </section>
     </main>
+
     <footer>
-      <h1>WebStudio</h1>
-      <address>
-        <strong>м. Київ, пр-т Лесі Українки, 26</strong><br />
-        <small>info@devstudio.com</small><br />
-        <small>+38 096 111 11 11</small>
+      <h1 class="footer-logo">WebStudio</h1>
+      <address class="footer-address">
+        <strong class="footer-address-location">м. Київ, пр-т Лесі Українки, 26</strong><br />
+        <small class="footer-address-email">info@devstudio.com</small><br />
+        <small class="footer-address-phone">+38 096 111 11 11</small>
       </address>
     </footer>
   </body>

@@ -8,3 +8,14 @@
   --color-accent: #2196f3;
   --color-footer-text: rgba(255, 255, 255, 0.6);
 }
+body {
+  font-family: "roboto";
+}
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+}
