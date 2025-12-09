@@ -1,13 +1,14 @@
 :root {
---color-white: #ffffff;
---color-black: #000000;
---color-accent: #2196f3;
---color-primary-text: #212121;
---color-secondary-text: #757575;
---color-borders: #EEEEEE;
---color-buttons: #f5f4fa;
---color-header-border: #ECECEC;
---color-background-footer: #2f303a ;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-accent: #2196f3;
+  --color-primary-text: #212121;
+  --color-secondary-text: #757575;
+  --color-borders: #eeeeee;
+  --color-buttons: #f5f4fa;
+  --color-header-border: #ececec;
+  --color-background-footer: #2f303a;
+  --color-svg-icon: #afb1b8;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
 .header {
-  width: 100%; 
+  width: 100%;
   height: 80px;
   border-bottom: solid;
   border-color: var(--color-header-border);
@@ -31,30 +32,41 @@ body {
 
 .header .container {
   display: flex;
-  justify-content: space-between; 
-  align-items: center;           
+  justify-content: space-between;
+  align-items: center;
 }
-.logo-blue{
+
+.logo-blue {
   color: var(--color-accent);
 }
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
   margin-right: 250px;
   gap: 30px;
 }
+
 .nav-list li {
-  margin-left: 30px;  
+  margin-left: 30px;
 }
+
 .nav-list-link {
   color: #212121;
   font-weight: 500;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
+
+.nav-list-link:hover {
+  color: var(--color-accent);
+}
+
 .nav-list-link-blue {
   color: var(--color-accent);
   font-weight: 500;
@@ -62,44 +74,40 @@ body {
   margin-left: 60px;
   margin: 0px auto;
   list-style: none;
-  position:relative;
-}
-
-.nav-list-link {
-  color: #212121;
-  font-weight: 500;
-  text-decoration: none;
+  position: relative;
 }
 
 .nav-list-link-blue:after {
-    content: "";
-    position: absolute;
-    left: 11px;
-    bottom: -31px;
-    background-color: rgba(33, 150, 243, 1);
-    max-width: 48px;
-    width: 100%;
-    height: 4px;
-    border-radius: 3px;
- }
+  content: "";
+  position: absolute;
+  left: 11px;
+  bottom: -31px;
+  background-color: rgba(33, 150, 243, 1);
+  max-width: 48px;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+}
 
 .header-contact {
   display: flex;
-  gap: 30px;             
+  gap: 30px;
   align-items: center;
-  white-space: nowrap;   
+  white-space: nowrap;
 }
+
 .header-section-email {
   color: var(--color-secondary-text);
 }
+
 .header-section-phone {
-color: var(--color-secondary-text);
+  color: var(--color-secondary-text);
 }
 
 .mail-item {
   fill: var(--color-secondary-text);
-width: 16px;
-height: 12px;
+  width: 16px;
+  height: 12px;
 }
 
 .phone-item {
@@ -108,18 +116,28 @@ height: 12px;
   height: 16px;
 }
 
-.header-section-email:hover, .mail-item:hover  {
+.header-section-email:hover,
+.mail-item:hover {
   fill: var(--color-accent);
-    color: var(--color-accent)
+  color: var(--color-accent);
 }
 
-.header-section-phone:hover, .phone-item:hover {
+.header-section-phone:hover,
+.phone-item:hover {
   fill: var(--color-accent);
-    color: #2196f3;
+  color: #2196f3;
+}
+
+.header-section-email,
+.header-section-phone,
+.mail-item,
+.phone-item {
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .nav-list-link-blue:hover {
-    color: var(--color-accent)
+  color: var(--color-accent);
 }
 
 section {
@@ -131,7 +149,7 @@ section {
   justify-content: center;
   gap: 10px;
   margin-top: 60px;
-} 
+}
 .color-blue {
   background-color: var(--color-accent);
   color: var(--color-white);
@@ -140,6 +158,7 @@ section {
   border-style: none;
   border-radius: 4px;
   font-size: 16px;
+  cursor: pointer;
 }
 .first-section-button-1 {
   background-color: var(--color-buttons);
@@ -151,6 +170,7 @@ section {
   font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 .first-section-button-2 {
   background-color: var(--color-buttons);
@@ -159,9 +179,10 @@ section {
   border-radius: 4px;
   width: 112px;
   height: 38px;
-   font-family: "roboto";
+  font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 .first-section-button-3 {
   background-color: var(--color-buttons);
@@ -170,9 +191,10 @@ section {
   border-radius: 4px;
   width: 103px;
   height: 38px;
-   font-family: "roboto";
+  font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 .first-section-button-4 {
   background-color: var(--color-buttons);
@@ -181,11 +203,29 @@ section {
   border-radius: 4px;
   width: 130px;
   height: 38px;
-   font-family: "roboto";
+  font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
+.first-section button,
+.first-section-button,
+.first-section-button-1,
+.first-section-button-2,
+.first-section-button-3,
+.first-section-button-4 {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.first-section button:hover,
+.first-section-button-1:hover,
+.first-section-button-2:hover,
+.first-section-button-3:hover,
+.first-section-button-4:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
 
 .overlay-wrap {
   position: relative;
@@ -211,6 +251,7 @@ section {
   transform: scale(0);
   transition: 0.4s ease-in-out;
   transform-origin: bottom;
+  border-radius: 3px;
 }
 
 .overlay-wrap:hover .overlay {
@@ -225,10 +266,10 @@ section {
 }
 .hero-section-item {
   max-width: 370px;
-  flex: 0 1 calc((100% - 60px) / 3); 
+  flex: 0 1 calc((100% - 60px) / 3);
   background-color: var(--color-white);
-  border: 1px solid var(--color-borders); 
-  border-radius: 4px; 
+  border: 1px solid var(--color-borders);
+  border-radius: 4px;
 }
 .hero-section-img {
   width: 370px;
@@ -240,9 +281,14 @@ section {
 }
 
 .hero-section-type {
-color: #757575;
+  color: #757575;
 }
 
+.hero-section-title,
+.hero-section-type {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 footer {
   background-color: var(--color-background-footer);
@@ -303,12 +349,12 @@ footer {
 .footer-social-link {
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.10);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 0.3s ease-;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .footer-social-icon {
@@ -329,12 +375,12 @@ footer {
 }
 
 .footer-address-email {
-  color: rgb(255, 255, 255, 0.60);
+  color: rgb(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
 .footer-address-phone {
-  color: rgb(255, 255, 255, 0.60);
+  color: rgb(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
@@ -344,6 +390,13 @@ footer {
 
 .footer-address-phone:hover {
   color: var(--color-accent);
+}
+
+.footer-address-email,
+.footer-address-phone,
+.footer-address-email:hover,
+.footer-address-phone:hover {
+   transition: color 0.2s ease-in-out;
 }
 
 .footer-subscribe-title {
@@ -389,7 +442,8 @@ footer {
 }
 
 .footer-subscribe-button:hover {
-  background-color: #188CE8;
+  background-color: #1881f8e1;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .subscribe-icon {
