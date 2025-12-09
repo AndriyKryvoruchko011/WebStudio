@@ -63,7 +63,6 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-
 .nav-list-link-blue::after {
     content: "";
     position: absolute;
